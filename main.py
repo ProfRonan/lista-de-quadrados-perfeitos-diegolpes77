@@ -1,9 +1,7 @@
-def imprimir_quadrados_perfeitos(numero):
-    i = 1
-    while i * i <= numero:
-        print(i * i)
-        i += 1
-3
+import math
 
 numero = int(input("Digite um número: "))
-imprimir_quadrados_perfeitos(numero)
+
+print("Quadrados perfeitos menores ou iguais a", numero, ":")
+for i in range(1,numero+1):
+    print(i **2)
